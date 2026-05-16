@@ -542,7 +542,7 @@ textarea.form-control { min-height: 126px; resize: vertical; }
 .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .product-card { overflow: hidden; position: relative; display: flex; flex-direction: column; }
 .product-card-media { position: relative; background: linear-gradient(180deg, #fff7e5, #ead7af); padding: 20px; min-height: 235px; display: grid; place-items: center; }
-.product-card-media img { height: 195px; width: 100%; object-fit: contain; filter: drop-shadow(0 20px 18px rgba(60,35,5,.16)); }
+.product-card-media img { height: 195px; width: 100%; object-fit: contain; }
 .product-badge {
   position: absolute;
   left: 17px;
