@@ -1,23 +1,23 @@
 const IMAGE = {
-  hero: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1800&q=85',
-  brewery: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=85',
-  taproom: 'https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?auto=format&fit=crop&w=1600&q=85',
-  barrels: 'https://images.unsplash.com/photo-1528823872057-9c018a7a7553?auto=format&fit=crop&w=1600&q=85',
-  patio: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1600&q=85',
-  food: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=85',
-  cheers: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=1600&q=85',
-  hops: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=85',
-  flight: 'https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&w=1600&q=85',
-  event: 'https://images.unsplash.com/photo-1556125574-d7f27ec36a06?auto=format&fit=crop&w=1600&q=85',
-  contact: 'https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1600&q=85',
-  pilsner: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=900&q=85',
-  ipa: 'https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?auto=format&fit=crop&w=900&q=85',
-  stout: 'https://images.unsplash.com/photo-1559526642-c3f001ea68ee?auto=format&fit=crop&w=900&q=85',
-  wheat: 'https://images.unsplash.com/photo-1523567830207-96731740fa71?auto=format&fit=crop&w=900&q=85',
-  reserve: 'https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=900&q=85',
-  sour: 'https://images.unsplash.com/photo-1566633806327-68e152aaf26d?auto=format&fit=crop&w=900&q=85',
-  amber: 'https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=900&q=85',
-  cider: 'https://images.unsplash.com/photo-1571767454098-246b94fbcf70?auto=format&fit=crop&w=900&q=85'
+  hero: 'images/img1.avif',
+  brewery: 'images/img2.avif',
+  taproom: 'images/img3.avif',
+  barrels: 'images/img4.avif',
+  patio: 'images/img5.avif',
+  food: 'images/img6.avif',
+  cheers: 'images/img7.avif',
+  hops: 'images/img8.avif',
+  flight: 'images/img9.avif',
+  event: 'images/img10.avif',
+  contact: 'images/img11.avif',
+  pilsner: 'images/img12.avif',
+  ipa: 'images/img13.avif',
+  stout: 'images/img14.avif',
+  wheat: 'images/img15.avif',
+  reserve: 'images/img16.avif',
+  sour: 'images/img17.avif',
+  amber: 'images/img18.avif',
+  cider: 'images/img19.avif'
 };
 
 const PRODUCTS = [
@@ -44,7 +44,7 @@ const PRODUCTS = [
   },
   {
     id: 'citrus-wheat', name: 'Citrus Wheat', type: 'wheat', mood: 'fruity', price: 279, pack: '500ml Pint', abv: 4.8, ibu: 12,
-    badge: 'Refreshing', image: IMAGE.wheat, available: true, popularity: 87,
+    badge: 'Fresh', image: IMAGE.wheat, available: true, popularity: 87,
     tags: ['fruity', 'light', 'smooth'],
     desc: 'Cloudy wheat ale finished with orange peel, coriander, and a bright citrus nose.',
     food: 'Pairs with salads, tacos, seafood.'

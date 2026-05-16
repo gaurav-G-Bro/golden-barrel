@@ -545,8 +545,8 @@ textarea.form-control { min-height: 126px; resize: vertical; }
 .product-card-media img { height: 195px; width: 100%; object-fit: contain; filter: drop-shadow(0 20px 18px rgba(60,35,5,.16)); }
 .product-badge {
   position: absolute;
-  left: 16px;
-  top: 16px;
+  left: 17px;
+  top: 4px;
   background: var(--olive-dark);
   color: white;
   border-radius: 999px;
