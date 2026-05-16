@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Golden Barrel Brewery & Bar premium multi-page demo website with product filters, cart calculations, reservations, events, and gallery.">
+  <title>Golden Barrel Brewery & Bar | Premium Demo Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-shell">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Golden Barrel home">
+      <span class="logo-mark">GB</span>
+      <span class="logo-text"><strong>Golden<br>Barrel</strong><span>Brewery & Bar</span></span>
+    </a>
+    <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="beers.html">Our Beers</a>
+      <a class="nav-link" href="flights.html">Tasting Flights</a>
+      <a class="nav-link" href="story.html">Our Story</a>
+      <a class="nav-link" href="events.html">Events</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-cart-open aria-label="Open cart">🛒<span class="cart-count" data-cart-count>0</span></button>
+      <a class="btn btn-primary reserve-top" href="contact.html#reserve">Reserve a table</a>
+      <button class="menu-btn" type="button" data-menu-toggle aria-label="Open menu"><span class="menu-lines"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-copy" data-animate>
+          <span class="eyebrow">Independent craft brewery</span>
+          <h1>Raise a Glass to Better Evenings</h1>
+          <div class="title-rule">✺</div>
+          <p>Crafted with passion. Poured with purpose. Discover signature beers, tasting flights, private events, premium food pairings, and a fully interactive demo ordering experience.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="beers.html">View our beers</a>
+            <a class="btn btn-outline" href="contact.html#reserve">Reserve a table</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric"><strong>18+</strong><span>Demo pours</span></div>
+            <div class="metric"><strong>5★</strong><span>Guest mood</span></div>
+            <div class="metric"><strong>0%</strong><span>Real payment</span></div>
+          </div>
+        </div>
+        <div class="hero-media" data-hero-bg>
+          <div class="hero-float">
+            <b>Tonight’s pour</b>
+            <span>Hazy Horizon IPA with mango aroma, soft body, and bold tropical hop finish.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="centered" data-animate>
+        <span class="eyebrow">Signature beers</span>
+        <h2>Small-batch pours, big character</h2>
+        <div class="title-rule">✺</div>
+      </div>
+      <div class="product-strip" data-featured-products></div>
+    </div>
+  </section>
+
+  <section class="section story-section">
+    <div class="container story-grid">
+      <div class="story-copy" data-animate>
+        <span class="eyebrow">Our story</span>
+        <h2>Rooted in Tradition. Brewed for Today.</h2>
+        <p>Golden Barrel began with a simple belief: great beer brings people together. Our small-batch brews are crafted with quality ingredients, time-honored techniques, and a love for the community.</p>
+        <a class="btn btn-primary" href="story.html">Read our story</a>
+      </div>
+      <div class="story-image-grid" data-animate>
+        <img data-img-key="brewery" alt="Copper brewery interior" loading="lazy">
+        <div class="image-stack">
+          <img data-img-key="taproom" alt="Warm brewery taproom" loading="lazy">
+          <img data-img-key="barrels" alt="Barrel aging room" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container feature-band" data-animate>
+      <article class="feature-tile">
+        <div class="icon">⚗</div>
+        <h3>Tasting Flights</h3>
+        <p>Explore, savor, discover. Curated flights that take you on a journey of flavor.</p>
+        <a class="btn" href="flights.html">Explore flights</a>
+      </article>
+      <article class="feature-tile">
+        <div class="icon">▣</div>
+        <h3>Private Events</h3>
+        <p>Host unforgettable events in our beautiful brewery space.</p>
+        <a class="btn" href="events.html">Book an event</a>
+      </article>
+      <article class="feature-tile">
+        <div class="icon">♢</div>
+        <h3>Reserve a Table</h3>
+        <p>Great evenings start with a reservation and a perfect pour.</p>
+        <a class="btn" href="contact.html#reserve">Reserve now</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div data-animate>
+          <span class="eyebrow">What our guests say</span>
+          <h2>Warm atmosphere, cold beer</h2>
+        </div>
+        <a class="btn btn-outline" href="contact.html">Plan a visit</a>
+      </div>
+      <div class="reviews-wrap" data-review-slider>
+        <button class="review-arrow review-arrow-prev" type="button" aria-label="Previous testimonial" data-review-prev>‹</button>
+        <div class="reviews-viewport">
+          <div class="reviews-track" data-review-track>
+            <article class="review-card" data-animate><div class="stars">★★★★★</div><blockquote>“Amazing beers, cozy atmosphere, and the best service. Our new favorite spot.”</blockquote><cite>— Sarah L.</cite></article>
+            <article class="review-card" data-animate><div class="stars">★★★★★</div><blockquote>“The tasting flight was incredible. Every beer had its own story and character.”</blockquote><cite>— Michael T.</cite></article>
+            <article class="review-card" data-animate><div class="stars">★★★★★</div><blockquote>“Perfect place for celebrations. The event team took care of every little detail.”</blockquote><cite>— Priya K.</cite></article>
+            <article class="review-card" data-animate><div class="stars">★★★★★</div><blockquote>“Premium look, smooth ordering demo, and a warm brewery feel from the first screen.”</blockquote><cite>— Arjun M.</cite></article>
+            <article class="review-card" data-animate><div class="stars">★★★★★</div><blockquote>“The private event section made it very easy to imagine booking the space.”</blockquote><cite>— Neha R.</cite></article>
+          </div>
+        </div>
+        <button class="review-arrow review-arrow-next" type="button" aria-label="Next testimonial" data-review-next>›</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="centered" data-animate>
+        <span class="eyebrow">Gallery</span>
+        <h2>A look inside Golden Barrel</h2>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item large" data-lightbox-key="brewery" data-lightbox-caption="Copper brewhouse"><img data-img-key="brewery" alt="Copper brewhouse" loading="lazy"><span>Copper brewhouse</span></button>
+        <button class="gallery-item" data-lightbox-key="cheers" data-lightbox-caption="Fresh pours"><img data-img-key="cheers" alt="Fresh pours" loading="lazy"><span>Fresh pours</span></button>
+        <button class="gallery-item" data-lightbox-key="patio" data-lightbox-caption="Patio evenings"><img data-img-key="patio" alt="Patio evenings" loading="lazy"><span>Patio evenings</span></button>
+        <button class="gallery-item large" data-lightbox-key="food" data-lightbox-caption="Chef pairings"><img data-img-key="food" alt="Chef pairings" loading="lazy"><span>Chef pairings</span></button>
+        <button class="gallery-item" data-lightbox-key="barrels" data-lightbox-caption="Barrel reserve room"><img data-img-key="barrels" alt="Barrel reserve room" loading="lazy"><span>Barrel room</span></button>
+        <button class="gallery-item" data-lightbox-key="taproom" data-lightbox-caption="Taproom"><img data-img-key="taproom" alt="Taproom" loading="lazy"><span>Taproom</span></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="index.html">
+        <span class="logo-mark">GB</span>
+        <span class="logo-text"><strong>Golden<br>Barrel</strong><span>Brewery & Bar</span></span>
+      </a>
+      <p>Good beer. Good people. Better evenings. Premium demo website for a brewery, bar, tasting room, and events brand.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">f</a>
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">◎</a>
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">𝕏</a>
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">▶</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="beers.html">Our Beers</a></li>
+        <li><a href="flights.html">Tasting Flights</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="events.html">Private Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit us</h4>
+      <ul>
+        <li>123 Brewery Way</li>
+        <li>Portland, OR 97201</li>
+        <li>(503) 555-0123</li>
+        <li>Mon - Thu: 3pm - 11pm</li>
+        <li>Fri - Sun: 12pm - 12am</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p>Be the first to know about new pours, events, and chef pairings.</p>
+      <form class="newsletter-row" data-newsletter-form>
+        <input class="form-control" type="email" placeholder="Enter your email" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Golden Barrel Brewery & Bar. Developed by - <a href="https://www.linkedin.com/in/gaurav-kumar-a945231b0/" target="_blank">Gaurav</a></span>
+    <span><a href="#" data-demo-action="Privacy policy is a placeholder for demo purpose only.">Privacy Policy</a> · <a href="#" data-demo-action="Terms page is a placeholder for demo purpose only.">Terms of Service</a></span>
+  </div>
+</footer>
+
+<div class="cart-drawer" data-cart-drawer aria-hidden="true">
+  <div class="cart-overlay" data-cart-close></div>
+  <aside class="cart-panel" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" type="button" data-cart-close aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-summary">
+      <div class="promo-row">
+        <input class="form-control" data-promo-input placeholder="Promo code">
+        <button class="btn btn-outline btn-small" type="button" data-apply-promo>Apply</button>
+      </div>
+      <div class="demo-note" data-promo-message>Use GOLDEN10 or FIRSTPINT for demo discount.</div>
+      <div class="summary-row"><span>Subtotal</span><strong data-subtotal>₹0</strong></div>
+      <div class="summary-row"><span>Discount</span><strong data-discount>− ₹0</strong></div>
+      <div class="summary-row"><span>Service fee</span><strong data-service>₹0</strong></div>
+      <div class="summary-row"><span>GST / tax demo</span><strong data-gst>₹0</strong></div>
+      <div class="summary-row total"><span>Total</span><strong data-total>₹0</strong></div>
+      <button class="btn btn-primary btn-full" type="button" data-checkout>Place demo order</button>
+      <button class="btn btn-outline btn-full" type="button" data-clear-cart>Clear cart</button>
+      <p class="demo-note">Checkout is for demo purpose only. No real order, payment, alcohol sale, or booking will happen.</p>
+    </div>
+  </aside>
+</div>
+
+<div class="modal" data-product-modal aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-card">
+    <button class="icon-btn modal-close" type="button" data-modal-close aria-label="Close">×</button>
+    <div data-product-modal-body></div>
+  </div>
+</div>
+
+<div class="modal" data-demo-modal aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-card" style="max-width:560px;padding:34px">
+    <button class="icon-btn modal-close" type="button" data-modal-close aria-label="Close">×</button>
+    <span class="eyebrow">Golden Barrel Demo</span>
+    <h3 data-demo-title>Demo purpose only</h3>
+    <p data-demo-text>This action is only for demo purpose.</p>
+    <button class="btn btn-primary" type="button" data-modal-close>Understood</button>
+  </div>
+</div>
+
+<div class="lightbox" data-lightbox aria-hidden="true">
+  <div class="lightbox-backdrop" data-modal-close></div>
+  <img class="lightbox-img" data-lightbox-img src="" alt="Gallery image">
+  <div class="lightbox-caption" data-lightbox-caption></div>
+</div>
+
+<div class="toast-wrap" data-toast-wrap></div>
+
+<nav class="mobile-bottom-bar" aria-label="Mobile quick navigation">
+  <a href="index.html"><strong>⌂</strong><span>Home</span></a>
+  <a href="beers.html"><strong>🍺</strong><span>Beers</span></a>
+  <a href="contact.html#reserve"><strong>◎</strong><span>Reserve</span></a>
+  <button type="button" data-cart-open><strong>🛒</strong><span>Cart</span></button>
+</nav>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

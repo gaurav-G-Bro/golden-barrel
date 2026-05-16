@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Golden Barrel Brewery & Bar premium multi-page demo website with product filters, cart calculations, reservations, events, and gallery.">
+  <title>Our Beers | Golden Barrel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-shell">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Golden Barrel home">
+      <span class="logo-mark">GB</span>
+      <span class="logo-text"><strong>Golden<br>Barrel</strong><span>Brewery & Bar</span></span>
+    </a>
+    <nav class="nav-links" data-nav-links aria-label="Primary navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="beers.html">Our Beers</a>
+      <a class="nav-link" href="flights.html">Tasting Flights</a>
+      <a class="nav-link" href="story.html">Our Story</a>
+      <a class="nav-link" href="events.html">Events</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-cart-open aria-label="Open cart">🛒<span class="cart-count" data-cart-count>0</span></button>
+      <a class="btn btn-primary reserve-top" href="contact.html#reserve">Reserve a table</a>
+      <button class="menu-btn" type="button" data-menu-toggle aria-label="Open menu"><span class="menu-lines"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="page-hero-copy" data-animate>
+        <span class="eyebrow">Our beers & shop demo</span>
+        <h1>Filter, discover, and build your perfect cart</h1>
+        <p>Search by style, flavor mood, strength, and price. Add demo products to the cart and see live calculations for subtotal, discounts, service fee, tax, and final total.</p>
+        <div class="hero-actions"><button class="btn btn-primary" data-cart-open>View cart</button><a class="btn btn-outline" href="#products">Start filtering</a></div>
+      </div>
+      <div class="page-hero-image" data-bg-image="flight"></div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container product-layout">
+      <aside class="filter-panel" data-animate>
+        <span class="eyebrow">Smart filters</span>
+        <h3>Find your pour</h3>
+        <div class="form-group"><label for="searchInput">Search</label><input id="searchInput" class="form-control" placeholder="IPA, citrus, stout, gift..."></div>
+        <div class="form-group"><label for="styleFilter">Style</label><select id="styleFilter" class="form-control"><option value="all">All styles</option><option value="lager">Lager</option><option value="ipa">IPA</option><option value="stout">Stout</option><option value="wheat">Wheat</option><option value="reserve">Reserve</option><option value="sour">Sour</option><option value="ale">Ale</option><option value="cider">Cider</option><option value="flight">Flights</option><option value="food">Food Pairings</option><option value="gift">Gifts</option></select></div>
+        <div class="form-group"><label for="moodFilter">Flavor mood</label><select id="moodFilter" class="form-control"><option value="all">All moods</option><option value="crisp">Crisp</option><option value="hoppy">Hoppy</option><option value="roasty">Roasty</option><option value="fruity">Fruity</option><option value="bold">Bold</option><option value="malty">Malty</option><option value="shared">Shared</option><option value="gift">Gift</option></select></div>
+        <div class="form-group"><label for="maxPrice">Max price</label><input id="maxPrice" class="form-control" type="number" value="5000" min="0"></div>
+        <div class="range-row">
+          <div class="form-group"><label for="minAbv">Min ABV</label><input id="minAbv" class="form-control" type="number" value="0" min="0" step="0.1"></div>
+          <div class="form-group"><label for="maxAbv">Max ABV</label><input id="maxAbv" class="form-control" type="number" value="12" min="0" step="0.1"></div>
+        </div>
+        <label class="check-row"><input id="onlyAvailable" type="checkbox" checked> Show available demo items only</label>
+        <div class="filter-actions"><button class="btn btn-primary" type="button" data-reset-filters>Reset filters</button><button class="btn btn-outline" type="button" data-cart-open>Cart</button></div>
+      </aside>
+      <div>
+        <div class="results-toolbar" data-animate>
+          <p><strong data-results-count>0 products found</strong><br><span class="demo-note">All product/order actions are demo-only.</span></p>
+          <div class="form-group" style="margin:0;min-width:220px"><label for="sortBy">Sort by</label><select id="sortBy" class="form-control"><option value="popular">Most popular</option><option value="price-low">Price low to high</option><option value="price-high">Price high to low</option><option value="abv-high">Highest ABV</option><option value="name">Name A-Z</option></select></div>
+        </div>
+        <div class="product-grid" data-product-grid></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container cards-grid">
+      <article class="menu-panel" data-animate>
+        <span class="eyebrow">Pairings</span><h3>Chef picks</h3>
+        <div class="menu-list">
+          <div class="menu-row"><div><strong>Truffle Fries</strong><span>Sea salt, herbs, aioli</span></div><b>₹299</b></div>
+          <div class="menu-row"><div><strong>Smoked Wings</strong><span>House rub, hot honey</span></div><b>₹449</b></div>
+          <div class="menu-row"><div><strong>Cheese Board</strong><span>Local cheeses, breads</span></div><b>₹699</b></div>
+        </div>
+      </article>
+      <article class="menu-panel" data-animate>
+        <span class="eyebrow">Demo codes</span><h3>Try discounts</h3>
+        <p>Use promo code <strong>GOLDEN10</strong> for 10% off or <strong>FIRSTPINT</strong> for 15% off in the cart drawer.</p>
+        <button class="btn btn-primary" data-cart-open>Open cart</button>
+      </article>
+      <article class="menu-panel" data-animate>
+        <span class="eyebrow">Responsible note</span><h3>Presentation only</h3>
+        <p>This UI is designed for client demo and portfolio presentation only. It does not sell alcohol, process payments, or place orders.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="index.html">
+        <span class="logo-mark">GB</span>
+        <span class="logo-text"><strong>Golden<br>Barrel</strong><span>Brewery & Bar</span></span>
+      </a>
+      <p>Good beer. Good people. Better evenings. Premium demo website for a brewery, bar, tasting room, and events brand.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">f</a>
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">◎</a>
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">𝕏</a>
+        <a href="#" data-demo-action="Social media links are placeholders for demo purpose only.">▶</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="beers.html">Our Beers</a></li>
+        <li><a href="flights.html">Tasting Flights</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="events.html">Private Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit us</h4>
+      <ul>
+        <li>123 Brewery Way</li>
+        <li>Portland, OR 97201</li>
+        <li>(503) 555-0123</li>
+        <li>Mon - Thu: 3pm - 11pm</li>
+        <li>Fri - Sun: 12pm - 12am</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p>Be the first to know about new pours, events, and chef pairings.</p>
+      <form class="newsletter-row" data-newsletter-form>
+        <input class="form-control" type="email" placeholder="Enter your email" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Golden Barrel Brewery & Bar. Developed by - <a href="https://www.linkedin.com/in/gaurav-kumar-a945231b0/" target="_blank">Gaurav</a></span>
+    <span><a href="#" data-demo-action="Privacy policy is a placeholder for demo purpose only.">Privacy Policy</a> · <a href="#" data-demo-action="Terms page is a placeholder for demo purpose only.">Terms of Service</a></span>
+  </div>
+</footer>
+
+<div class="cart-drawer" data-cart-drawer aria-hidden="true">
+  <div class="cart-overlay" data-cart-close></div>
+  <aside class="cart-panel" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" type="button" data-cart-close aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-summary">
+      <div class="promo-row">
+        <input class="form-control" data-promo-input placeholder="Promo code">
+        <button class="btn btn-outline btn-small" type="button" data-apply-promo>Apply</button>
+      </div>
+      <div class="demo-note" data-promo-message>Use GOLDEN10 or FIRSTPINT for demo discount.</div>
+      <div class="summary-row"><span>Subtotal</span><strong data-subtotal>₹0</strong></div>
+      <div class="summary-row"><span>Discount</span><strong data-discount>− ₹0</strong></div>
+      <div class="summary-row"><span>Service fee</span><strong data-service>₹0</strong></div>
+      <div class="summary-row"><span>GST / tax demo</span><strong data-gst>₹0</strong></div>
+      <div class="summary-row total"><span>Total</span><strong data-total>₹0</strong></div>
+      <button class="btn btn-primary btn-full" type="button" data-checkout>Place demo order</button>
+      <button class="btn btn-outline btn-full" type="button" data-clear-cart>Clear cart</button>
+      <p class="demo-note">Checkout is for demo purpose only. No real order, payment, alcohol sale, or booking will happen.</p>
+    </div>
+  </aside>
+</div>
+
+<div class="modal" data-product-modal aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-card">
+    <button class="icon-btn modal-close" type="button" data-modal-close aria-label="Close">×</button>
+    <div data-product-modal-body></div>
+  </div>
+</div>
+
+<div class="modal" data-demo-modal aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-card" style="max-width:560px;padding:34px">
+    <button class="icon-btn modal-close" type="button" data-modal-close aria-label="Close">×</button>
+    <span class="eyebrow">Golden Barrel Demo</span>
+    <h3 data-demo-title>Demo purpose only</h3>
+    <p data-demo-text>This action is only for demo purpose.</p>
+    <button class="btn btn-primary" type="button" data-modal-close>Understood</button>
+  </div>
+</div>
+
+<div class="lightbox" data-lightbox aria-hidden="true">
+  <div class="lightbox-backdrop" data-modal-close></div>
+  <img class="lightbox-img" data-lightbox-img src="" alt="Gallery image">
+  <div class="lightbox-caption" data-lightbox-caption></div>
+</div>
+
+<div class="toast-wrap" data-toast-wrap></div>
+
+<nav class="mobile-bottom-bar" aria-label="Mobile quick navigation">
+  <a href="index.html"><strong>⌂</strong><span>Home</span></a>
+  <a href="beers.html"><strong>🍺</strong><span>Beers</span></a>
+  <a href="contact.html#reserve"><strong>◎</strong><span>Reserve</span></a>
+  <button type="button" data-cart-open><strong>🛒</strong><span>Cart</span></button>
+</nav>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
